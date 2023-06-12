@@ -5,9 +5,9 @@ const index = (arrayOfGames) => {
 
 // Command to create a new item
 const create = (games, gameTitle) => {
-    const game = { title: gameTitle };
-    games.push(game);
-    return games;
+    // const game = { title: gameTitle };
+    // games.push(game);
+    // return games;
 
 }
 
