@@ -5,16 +5,16 @@ const index = (arrayOfGames) => {
 
 // Command to create a new item
 const create = (games, gameTitle) => {
-    // const game = { title: gameTitle };
-    // games.push(game);
-    // return games;
+    const newGame = { title: gameTitle };
+    games.push(game);
+    return games;
 
 }
 
 // Command to see the details of one item
 const read = (games, gameId) => {
-    const gameToFind = games.find((game) => game.id === gameId);
-    return gameToFind.title + " " + gameToFind.platform;
+    //     const gameToFind = games.find((game) => game.id === gameId);
+    //     console.log(gameToFind)
 
 }
 

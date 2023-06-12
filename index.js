@@ -6,10 +6,14 @@ const inform = console.log;
 
 const run = () => {
 
-    let games = readJSONFile("data", "sample.json");
 
     const command = process.argv[2]; // The command/action that the employee typed ex. "index", "show", "create"
     const game = process.argv[3];// the game that the employee wants to interact with
+
+    let games = readJSONFile("data", "sample.json");
+
+    let writeToFile = false;
+    let updatedGames = [];
 
     switch (command) {
         case "index":
@@ -17,6 +21,8 @@ const run = () => {
             inform(allItems);
             break;
         case "create":
+            updatedGames = create(games, game);
+            writeToFile = true;
             break;
         case "read":
             const oneItem = read(games, game);
