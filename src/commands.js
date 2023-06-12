@@ -1,11 +1,22 @@
 // Command to see a list of all the items
-const index = () => { }
+const index = (arrayOfGames) => {
+    return arrayOfGames.map((eachGame) => `id: ${eachGame.id}, title: ${eachGame.title}, inStock: ${eachGame.inStock}`).join("\n");
+}
 
 // Command to create a new item
-const create = () => { }
+const create = (games, gameTitle) => {
+    const game = { title: gameTitle };
+    games.push(game);
+    return games;
+
+}
 
 // Command to see the details of one item
-const read = () => { }
+const read = (games, gameId) => {
+    const gameToFind = games.find((game) => game.id === gameId);
+    return gameToFind.title + " " + gameToFind.platform;
+
+}
 
 // Command to update an item
 const update = () => { }

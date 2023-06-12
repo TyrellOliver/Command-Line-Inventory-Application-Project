@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "Skyrim",
+        "platform": [
+            "xbox",
+            "playstation",
+            "pc"
+        ],
+        "genre": "Action role playing",
+        "priceInCents": 3500,
+        "inStock": true,
+        "quantity": 25,
+        "release_date": "11/11/11",
+        "publisher": "Bethesda Softworks",
+        "description": "The game is set 200 years after the events of Oblivion and takes place in Skyrim, the northernmost province of Tamriel, a continent on the planet Nirn. Its main story focuses on the player's character, the Dragonborn, on their quest to defeat Alduin the World-Eater, a dragon who is prophesied to destroy the world."
+    },
+    {
+        "id": 2,
+        "title": "Grand Theft Auto V",
+        "platform": [
+            "xbox",
+            "playstation",
+            "pc"
+        ],
+        "genre": "Action-adventure game",
+        "priceInCents": 4000,
+        "inStock": true,
+        "quantity": 23,
+        "release_date": "9/17/13",
+        "publisher": "Rockstar Games",
+        "description": "Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three protagonists—retired bank robber Michael De Santa, street gangster Franklin Clinton, and drug dealer and gunrunner Trevor Philips—and their attempts to commit heists while under pressure from a corrupt government agency and powerful criminals."
+    },
+    {
+        "id": 3,
+        "title": "Minecraft",
+        "platform": "",
+        "genre": "",
+        "priceInCents": "",
+        "inStock": false,
+        "quantity": "",
+        "release_date": "",
+        "publisher": "",
+        "description": ""
+    }
+]
