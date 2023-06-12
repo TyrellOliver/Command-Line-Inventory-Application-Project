@@ -1,3 +1,7 @@
+const { readJSONFile, writeJSONFile } = require("./src/helpers");
+
+const { index, create, read, update, destroy } = require("./src/commands")
+
 const inform = console.log;
 
 const run = () => {
@@ -14,7 +18,7 @@ const run = () => {
             break;
         case "update":
             break;
-        case "delete":
+        case "destroy":
             break;
         default:
             inform("Sorry, that command is incorrect.");

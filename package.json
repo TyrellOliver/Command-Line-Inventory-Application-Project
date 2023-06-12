@@ -10,7 +10,7 @@
     "create": "node index.js create",
     "read": "node index.js read",
     "update": "node index.js update",
-    "delete": "node index.js delete"
+    "destroy": "node index.js destroy"
   },
   "keywords": [],
   "author": "Tyrell K. Oliver",
