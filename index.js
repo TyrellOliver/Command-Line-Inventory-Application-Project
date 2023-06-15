@@ -12,8 +12,6 @@ const run = () => {
 
     let games = readJSONFile("data", "sample.json");
 
-    let writeToFile = false;
-    let updatedGames = [];
 
     switch (command) {
         case "index":
@@ -21,8 +19,8 @@ const run = () => {
             inform(allItems);
             break;
         case "create":
-            updatedGames = create(games, game);
-            writeToFile = true;
+            create(games, game);
+            writeJSONFile("data", "sample.json", games)
             break;
         case "read":
             const oneItem = read(games, game);
