@@ -24,11 +24,18 @@ const run = () => {
             break;
         case "read":
             const oneItem = read(games, game);
-            inform(oneItem);
+            if (oneItem) {
+                inform(oneItem)
+            } else {
+                inform(`Game Id ${game} not found`)
+            }
             break;
         case "update":
+
             break;
         case "destroy":
+            const newArray = destroy(games, game)
+            writeJSONFile("data", "sample1.json", newArray)
             break;
         default:
             inform("Invalid command. Please put in the correct command.");

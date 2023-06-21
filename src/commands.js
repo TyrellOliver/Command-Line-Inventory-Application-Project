@@ -13,16 +13,20 @@ const create = (games, gameTitle) => {
 
 // Command to see the details of one item
 const read = (games, gameId) => {
-    //     const gameToFind = games.find((game) => game.id === gameId);
-    //     console.log(gameToFind)
-
+    const gameIdNum = Number(gameId);
+    const gameToFind = games.find((game) => game.id === gameIdNum);
+    return gameToFind;
 }
 
 // Command to update an item
 const update = () => { }
 
 //Command to delete an item
-const destroy = () => { }
+const destroy = (games, gameId) => {
+    const gameIdNum = Number(gameId);
+    const filteredArray = games.filter((game) => game.id !== gameIdNum)
+    return filteredArray;
+}
 
 
 module.exports = {
